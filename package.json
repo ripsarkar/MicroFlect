@@ -1,5 +1,16 @@
 {
   "name": "microflect",
   "version": "1.0.0",
-  "description": "",
+  "description": "A microfrontend framework using React and Webpack Module Federation",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack serve",
+    "build": "webpack build"
+  },
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^17.0.2",
+    "webpack": "^5.0.0"
+  }
 }
