@@ -9,6 +9,7 @@ Get started with our easy-to-use, downloadable framework to elevate your fronten
 In addition, view my professional journey as a UI Architect. With a strong focus on user-centered design and a passion for creating intuitive, engaging interfaces, I invite you to explore my resume and portfolio showcasing my skills, projects, and contributions to the industry.
 
 Connect with me ripsarkar@uiresearchers.com and discover how we can collaborate to create exceptional digital experiences.
+
 MIT License
 
 Copyright (c) 2025 Ripunjoy
