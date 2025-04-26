@@ -7,7 +7,7 @@ module.exports = {
   mode: 'development',
   devServer: {
     static: path.join(__dirname, 'dist'),
-    port: 3001,
+    port: 3003,
   },
   output: {
     publicPath: 'auto',
@@ -31,11 +31,10 @@ module.exports = {
   plugins: [
     // To learn more about the usage of this plugin, please visit https://webpack.js.org/plugins/module-federation-plugin/
     new ModuleFederationPlugin({
-      name: 'app1',
+      name: 'app2',
       filename: 'remoteEntry.js',
       exposes: {
-        './Navbar': './src/Components/Navbar',
-        // './CardList': './src/Components/CardList',
+        './Sidebar': './src/Components/Sidebar',
       },
       shared: { react: { singleton: true }, 'react-dom': { singleton: true } },
     }),

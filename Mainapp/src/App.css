@@ -1,0 +1,15 @@
+.side-bar{
+    float: left;
+    width: 20%;
+    height: 600px;
+    background-color: #222121;
+    border-radius: 20px;
+    border: 5px solid rgb(105, 67, 229);
+}
+
+.main-content{
+    float: left;
+}
+#webpack-dev-server-client-overlay {
+    display: none !important;
+}

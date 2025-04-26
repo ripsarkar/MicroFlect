@@ -8,7 +8,7 @@ module.exports = {
   mode: "development",
   devServer: {
     static: path.join(__dirname, "dist"),
-    port: 3000,
+    port: 3002,
   },
   output: {
     publicPath: "auto",
@@ -23,6 +23,10 @@ module.exports = {
           presets: ["@babel/preset-react"],
         },
       },
+      {
+        test: /\.css$/i,
+        use: ["style-loader", "css-loader"],
+      },
     ],
   },
   plugins: [
@@ -30,7 +34,7 @@ module.exports = {
       name: "shell",
       remotes: {
         app1: "app1@http://localhost:3001/remoteEntry.js",
-        // app2: "app2@http://localhost:3002/remoteEntry.js",
+        app2: "app2@http://localhost:3003/remoteEntry.js",
       },
       shared: {react: {singleton: true}, "react-dom": {singleton: true}},
     }),
