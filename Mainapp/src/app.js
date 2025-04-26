@@ -5,6 +5,7 @@ import ErrorBoundary from './ErrorBoundary'; // Import the ErrorBoundary
 const Navbar = React.lazy(() => import("app1/Navbar"));
 const Sidebar = React.lazy(() => import("app2/Sidebar"));
 const Footer = React.lazy(() => import("app3/Footer"));
+const MainContent = React.lazy(() => import("app4/MainContent"));
 
 const App = () => {
   return (
@@ -22,14 +23,22 @@ const App = () => {
       </ErrorBoundary>
       <div className="main-content">
         {/* Main content of the app */}
+        <div className='main-content-container'>
+          <ErrorBoundary>
+            <Suspense fallback={"loading"}>
+              <MainContent />
+            </Suspense>
+          </ErrorBoundary>
+        </div>
+
       </div>
+      {/* Footer will stick to the bottom */}
       <ErrorBoundary>
         <Suspense fallback={"loading"}>
           <Footer />
         </Suspense>
-      </ErrorBoundary> {/* Footer will stick to the bottom */}
+      </ErrorBoundary>
     </div>
-
   );
 };
 

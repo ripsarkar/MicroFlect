@@ -1,0 +1,49 @@
+.main-content {
+    padding: 20px; /* Add padding around main content */
+    background-color: #f4f4f4; /* Light background for contrast */
+    flex: 1; /* Allow content to grow and fill available space when using flexbox */
+}
+
+.cards-container {
+    display: grid; /* Create a grid layout */
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Responsive grid */
+    gap: 20px; /* Space between cards */
+    margin-bottom: 20px; /* Space to the following content */
+}
+
+.card {
+    background-color: white; /* White background for cards */
+    border-radius: 5px; /* Slightly rounded corners */
+    padding: 15px; /* Padding inside the cards */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    text-align: center; /* Center the text inside the card */
+}
+
+.charts-container {
+    margin-bottom: 20px; /* Space below the charts section */
+}
+
+.chart-placeholder {
+    height: 200px; /* Fixed height for placeholder */
+    background-color: #ddd; /* Light grey background for placeholder */
+    display: flex; /* Align content */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    font-size: 18px; /* Font size for placeholder text */
+}
+
+.recent-activity {
+    background-color: white; /* White background for activity section */
+    border-radius: 5px; /* Rounded corners */
+    padding: 15px; /* Padding */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+.recent-activity ul {
+    list-style-type: none; /* No bullet points */
+    padding: 0; /* Remove default padding */
+}
+
+.recent-activity li {
+    margin: 10px 0; /* Spacing between activity items */
+}

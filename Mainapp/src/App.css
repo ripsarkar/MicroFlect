@@ -1,30 +1,39 @@
 /* Apply a flexbox layout */
 body, html {
-    height: 100%; /* Occupy the full height */
-    margin: 0; /* Remove default margin */
+    height: 100%; 
+    margin: 0; 
 }
 
 #root {
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* Stretch the container to the full height of the viewport */
+    min-height: 100vh; 
 }
 
 .main-content {
-    flex: 1; /* Allow main content to grow and fill the available space */
-}
-.side-bar{
-    float: left;
-    width: 20%;
-    height: 600px;
-    background-color: #222121;
-    border-radius: 20px;
-    border: 5px solid rgb(105, 67, 229);
+    flex: 1; 
+} 
+.main-content-container {
+    width: 80%;
+    float: right;
+} 
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif; /* Use a clean font-family */
+    background-color: #f4f4f4; /* Light background for the entire app */
 }
 
-.main-content{
-    float: left;
+.dashboard {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
+
+.dashboard-layout {
+    display: flex; 
+}
+
 #webpack-dev-server-client-overlay {
     display: none !important;
 }
